@@ -1,0 +1,225 @@
+/* réinitialisation des marges et des bordures */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* section: .contenu-bandeau */
+.contenu-bandeau {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-position: center;
+    background-image: url(https://static.wikia.nocookie.net/jjba/images/4/4b/AllJoJos.jpg/revision/latest/scale-to-width-down/600?cb=20181003204345&path-prefix=fr);
+    box-shadow: 1px 18px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 18px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 18px 5px 0px rgba(0,0,0,0.75);
+}
+
+/* article: .partie-sup */
+.partie-sup {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-grow: 2;
+    align-items: center;
+    padding-right: 30px;
+    gap: 600px;
+}
+
+/* div: .bandeau */
+.bandeau {
+    width: 30%;
+}
+.bandeau h1 {
+    font-size: 50px;
+    color: rgb(79, 137, 188);
+    text-align: center;
+    margin: 20px;
+    background-color: antiquewhite;
+    border-radius: 20%;
+}
+
+/* div: .loupe-et-menu */
+.loupe-et-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* div: .loupe */
+.loupe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loupe-cadre {
+    padding: 10px;
+    border: 10px solid black;
+    display: inline-flex;
+    border-radius: 0%;
+}
+.loupe img {
+    width: 100px;
+    height: auto;
+    background: none;
+    border-radius: 20%;
+}
+
+/* div: .menu */
+.menu {
+    padding: 10px;
+    border: 10px solid black;
+    font-size: 24px;
+    background-color: aliceblue;
+    border-radius: 20%;
+}
+
+/* section: .contenu-page */
+.contenu-page {
+    text-align: center;
+    font-size: 50px;
+    background-color: rgba(195, 150, 36, 0.927);
+    align-items: end;
+}
+
+/* article: .contenu */
+.contenu {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* division: .fil-d-ariane */
+.fil-d-ariane {
+    text-align: center;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(214, 87, 239);
+    background-color: aliceblue;
+    width: 40%;
+    border-radius: 20%;
+}
+
+/* article: .type-stand */
+.type-stand {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: burlywood;
+    justify-content: space-around;
+    width: 100%;
+    height: 50%;
+}
+.type-stand div {
+    text-align: center;
+}
+.type-stand .img img, .type-stand .imgno img {
+    width: 100px;
+    height: auto;
+}
+
+/* article: .card-1, .card-2, .card-3 */
+.card-1, .card-2, .card-3 {
+    display: grid;
+    grid-template-columns: repeat(6, 3fr);
+    gap: 10px;
+    margin: 30px auto;
+    width: 100%;
+    border-radius: 20%;
+    margin-top: 30px;
+}
+
+/* élément: .carte */
+.carte img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* bouton: .butt-stand */
+.butt-stand {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    background-color: darkmagenta;
+    box-shadow: 
+        inset 2px 2px 3px rgba(255,255,255, 0.6),
+        inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+.butt-stand:hover {
+    background-color: mediumslateblue;
+}
+.butt-stand:active {
+    box-shadow:
+        inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+        inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* article: .footer-ar */
+.footer-ar {
+    margin-top: 10px;
+    text-align: center;
+    background-color: black;
+    color: cadetblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* responsive: téléphone */
+@media screen and (max-width: 768px) {
+    .contenu-bandeau {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-position: center;
+        background-size: cover;
+    }
+    .partie-sup, .loupe-et-menu {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+    .loupe img {
+        width: 50px;
+    }
+    .bandeau h1, .fil-d-ariane h1 {
+        font-size: 22px;
+    }
+    .butt-stand {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+    .carte {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    .card {
+        margin: 8px 0;
+    }
+    .type-stand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-cadre {
+        width: 100%;
+        padding: 10px;
+    }
+    .contenu-bandeau {
+        background-size: cover;
+        background-position: center;
+    }
+}
