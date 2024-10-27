@@ -22,16 +22,6 @@ Ces références ont été des points de départ pour la structure visuelle et l
 ## **Ressources et aide**
 Lors de la création de ce projet, le site de [Mozilla Developer Network (MDN)](https://developer.mozilla.org/) a été une ressource précieuse pour la documentation des éléments HTML et CSS, ainsi que pour trouver des solutions aux défis de conception.
 
-## **Installation et utilisation**
-1. Clonez le dépôt sur votre machine :
-    ```bash
-    git clone https://github.com/votreutilisateur/nom_du_projet.git
-    ```
-
-2. Ouvrez le fichier `index.html` dans votre navigateur pour explorer le projet.
-
-## **Contribution**
-Les contributions sont les bienvenues ! Si vous souhaitez proposer des améliorations ou signaler des problèmes, n'hésitez pas à ouvrir une *issue* ou à faire une *pull request*.
 
 
 
